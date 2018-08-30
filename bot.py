@@ -1,4 +1,5 @@
 import discord
+import random
 from urllib3 import PoolManager
 from urllib3.exceptions import HTTPError
 client = discord.Client()
@@ -42,7 +43,11 @@ async def on_message(message):
 				await client.send_message(message.channel, msg)
 			else:
 				msg = 'I dont serve you..'.format(message)
-				await client.send_message(message.channel, msg)		
+				await client.send_message(message.channel, msg)	
+	if message.content.startswith('ask'):
+			r=random.choice(['Sure','I dont see why not', 'Whatever you wish', 'It's your decision'])
+
+	
 	
 	
 
