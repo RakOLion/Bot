@@ -45,7 +45,7 @@ async def on_message(message):
 				msg = 'I dont serve you..'.format(message)
 				await client.send_message(message.channel, msg)	
 	if message.content.startswith('ask'):
-			r=random.choice(['Sure','I dont see why not', 'Whatever you wish', 'It's your decision'])
+			r=random.choice(['Sure','I dont see why not', 'Whatever you wish', 'Its your decision'])
 
 	
 	
